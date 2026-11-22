@@ -38,6 +38,4 @@ Completed – Previous Semester.
 
 Refer to the respective package.json files for available scripts.
 
-## Project Screenshot
-
-![MindEase Dashboard](mindease-dashboard.png)
+![MindEase Dashboard](./mindease-dashboard.png)
