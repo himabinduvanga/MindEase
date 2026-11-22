@@ -37,3 +37,7 @@ Completed – Previous Semester.
 4. Start the backend and frontend servers.
 
 Refer to the respective package.json files for available scripts.
+
+## Project Screenshot
+
+![MindEase Dashboard](mindease-dashboard.png)
