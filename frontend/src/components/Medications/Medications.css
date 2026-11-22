@@ -1,0 +1,147 @@
+.medications-page {
+  padding: 40px 20px;
+  min-height: calc(100vh - 70px);
+}
+
+.medication-form-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.medication-form-card h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.time-selector {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.time-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.time-option input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.time-option:has(input[type="checkbox"]:checked) {
+  border-color: #667eea;
+  background: #f0f4ff;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  cursor: pointer;
+}
+
+.medications-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.medication-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.medication-card:hover {
+  transform: translateY(-2px);
+}
+
+.medication-card.inactive {
+  opacity: 0.7;
+}
+
+.medication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.medication-header h3 {
+  color: #333;
+  font-size: 22px;
+}
+
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.active {
+  background: #28a745;
+  color: white;
+}
+
+.status-badge.inactive {
+  background: #6c757d;
+  color: white;
+}
+
+.medication-details {
+  margin-bottom: 15px;
+}
+
+.medication-details p {
+  color: #666;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.medication-details strong {
+  color: #333;
+}
+
+.medication-actions {
+  display: flex;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.empty-state {
+  background: white;
+  border-radius: 12px;
+  padding: 60px;
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  grid-column: 1 / -1;
+}
+
+

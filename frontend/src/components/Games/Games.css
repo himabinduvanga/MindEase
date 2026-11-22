@@ -1,0 +1,179 @@
+.games-page {
+  padding: 40px 20px;
+  min-height: calc(100vh - 70px);
+}
+
+.games-page .page-header p {
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.games-menu {
+  margin-top: 30px;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.game-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.game-icon {
+  font-size: 64px;
+  margin-bottom: 15px;
+}
+
+.game-card h3 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.game-card p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.game-container {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.back-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.memory-game h2,
+.word-puzzle-game h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 30px 0;
+  max-width: 500px;
+}
+
+.memory-card {
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: white;
+  font-weight: bold;
+}
+
+.memory-card:hover {
+  transform: scale(1.05);
+}
+
+.memory-card.flipped {
+  background: white;
+  color: #333;
+  border: 2px solid #667eea;
+}
+
+.win-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.word-puzzle-game {
+  text-align: center;
+}
+
+.hint {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.scrambled-word {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.scrambled-letter {
+  display: inline-block;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  min-width: 50px;
+}
+
+.puzzle-input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+.puzzle-input input {
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.puzzle-input input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.success-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+

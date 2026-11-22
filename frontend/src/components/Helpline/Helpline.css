@@ -1,0 +1,105 @@
+.helpline-page {
+  padding: 40px 20px;
+  min-height: calc(100vh - 70px);
+}
+
+.helpline-page .page-header p {
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.helpline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.helpline-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.helpline-card:hover {
+  transform: translateY(-5px);
+}
+
+.helpline-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.helpline-card h3 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.helpline-number {
+  font-size: 24px;
+  color: #667eea;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.helpline-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.helpline-availability {
+  margin-bottom: 20px;
+}
+
+.availability-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #f0f4ff;
+  color: #667eea;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.call-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.call-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.emergency-notice {
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+}
+
+.emergency-notice h2 {
+  color: #856404;
+  margin-bottom: 15px;
+}
+
+.emergency-notice p {
+  color: #856404;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+

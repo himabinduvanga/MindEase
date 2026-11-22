@@ -1,0 +1,125 @@
+.progress-page {
+  padding: 40px 20px;
+  min-height: calc(100vh - 70px);
+}
+
+.progress-form-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.progress-form-card h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.mood-display {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #667eea;
+  margin-top: 10px;
+}
+
+.activities-selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.activity-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.activity-option input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.activity-option:has(input[type="checkbox"]:checked) {
+  border-color: #667eea;
+  background: #f0f4ff;
+}
+
+.progress-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.progress-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.progress-card:hover {
+  transform: translateY(-2px);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.progress-header h3 {
+  color: #333;
+  font-size: 20px;
+}
+
+.mood-badge {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.progress-details {
+  margin-bottom: 15px;
+}
+
+.progress-details p {
+  color: #666;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.progress-details .notes {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.progress-actions {
+  display: flex;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.empty-state {
+  background: white;
+  border-radius: 12px;
+  padding: 60px;
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  grid-column: 1 / -1;
+}
+
+
