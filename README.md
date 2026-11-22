@@ -38,4 +38,4 @@ Completed – Previous Semester.
 
 Refer to the respective package.json files for available scripts.
 
-![MindEase Dashboard](./mindease-dashboard.png)
+![MindEase Dashboard](./MindEase Wellness Dashboard.png)
